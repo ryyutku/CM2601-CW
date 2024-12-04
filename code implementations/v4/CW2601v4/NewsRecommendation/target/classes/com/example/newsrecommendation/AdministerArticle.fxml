@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newsrecommendation.AdminsterArticleController">
+   <children>
+      <TextField fx:id="title" layoutX="80.0" layoutY="64.0" promptText="Title" />
+      <TextField fx:id="link" layoutX="81.0" layoutY="120.0" prefHeight="26.0" prefWidth="438.0" promptText="Link" />
+      <TextField fx:id="date" layoutX="82.0" layoutY="172.0" prefHeight="26.0" prefWidth="438.0" promptText="Publish Date" />
+      <TextArea fx:id="description" layoutX="80.0" layoutY="222.0" prefHeight="113.0" prefWidth="438.0" promptText="Description" />
+      <TextField fx:id="category" layoutX="370.0" layoutY="64.0" promptText="Category" />
+      <Button layoutX="30.0" layoutY="353.0" mnemonicParsing="false" onAction="#ReadArticles" text="Read Articles" />
+      <Button fx:id="publish" layoutX="472.0" layoutY="353.0" mnemonicParsing="false" onAction="#PublishArticle" text="Publish Article" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="529.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.newsrecommendation.ArticleController">
+    <children>
+        <TableView fx:id="table" layoutX="34.0" layoutY="46.0" onMouseClicked="#MouseClicked" prefHeight="200.0" prefWidth="580.0">
+            <columns>
+                <TableColumn fx:id="Title" minWidth="0.0" prefWidth="362.4000244140625" text="Title" />
+            <TableColumn fx:id="Category" minWidth="0.0" prefWidth="217.5999755859375" text="Category" />
+            </columns>
+        </TableView>
+      <Button layoutX="679.0" layoutY="29.0" mnemonicParsing="false" onAction="#toPublish" text="Publish Articles" />
+      <TableView fx:id="Rtable" layoutX="40.0" layoutY="283.0" onMouseClicked="#MouseClicked" prefHeight="200.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="Rtitle" prefWidth="361.60003662109375" text="Title" />
+          <TableColumn fx:id="Rcategory" prefWidth="218.39996337890625" text="Category" />
+        </columns>
+      </TableView>
+      <Text layoutX="40.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Articles" wrappingWidth="111.50115966796875" />
+      <Text layoutX="40.0" layoutY="269.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recommended Articles" />
+    </children>
+</AnchorPane>
